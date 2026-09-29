@@ -1,11 +1,8 @@
-function Button({onClick, children}){
+function Button({children, ...rest}){
     return(
         
-        <>
+          <button className="cursor-pointer" {...rest}>{children}</button>
 
-        <button onClick={onClick}>{children}</button>
-
-        </>
     )
 }
 

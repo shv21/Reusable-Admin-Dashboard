@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) {
     return null;
@@ -13,15 +15,14 @@ function Modal({ isOpen, onClose, children }) {
         onClick={(e) => e.stopPropagation()}
       >
         {children}
-        <button
+        <Button
           onClick={onClose}
           className="mt-4 px-4 py-2 bg-black text-white rounded"
         >
           Close
-        </button>
+        </Button>
       </div>
     </div>
   );
 }
-
 export default Modal;

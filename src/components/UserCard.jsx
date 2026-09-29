@@ -1,3 +1,6 @@
+import formatDate from "../utils/formatDate";
+import Button from "./Button";
+
 function UserCard({ user, onClick }) {
   return (
     <div className="flex items-center justify-between p-4 rounded-lg bg-gray-50">
@@ -14,10 +17,10 @@ function UserCard({ user, onClick }) {
       <span className="text-sm text-gray-500">
         {user.username}
       </span>
-
-      <button onClick={() => onClick(user)}>
+      
+      <Button  onClick={() => onClick(user)}>
         View
-      </button>
+      </Button>
     </div>
   );
 }
