@@ -1,28 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 function Sidebar() {
   return (
-    <aside className="w-56 min-h-[calc(100vh-4rem)] bg-gray-900 text-white p-4">
-      <nav>
-        <ul className="space-y-2">
+    <aside className="w-56 min-h-screen border-r border-gray-200 p-4">
+      <nav className="flex flex-col gap-2">
 
-          <li>
-            <button className="w-full text-left px-4 py-3 rounded-lg bg-gray-800">
-              Dashboard
-            </button>
-          </li>
+        <NavLink to="/dashboard">
+          Dashboard
+        </NavLink>
 
-          <li>
-            <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-800">
-              Users
-            </button>
-          </li>
+        <NavLink to="/dashboard/users">
+          Users
+        </NavLink>
 
-          <li>
-            <button className="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-800">
-              Settings
-            </button>
-          </li>
+        <NavLink to="/dashboard/settings">
+          Settings
+        </NavLink>
 
-        </ul>
       </nav>
     </aside>
   );

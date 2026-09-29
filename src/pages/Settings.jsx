@@ -1,9 +1,15 @@
-import React from 'react'
-
 function Settings() {
   return (
-    <div>Settings</div>
-  )
+    <div>
+      <h1 className="text-2xl font-bold">
+        Settings
+      </h1>
+
+      <p className="text-gray-500">
+        Dashboard settings
+      </p>
+    </div>
+  );
 }
 
-export default Settings
+export default Settings;

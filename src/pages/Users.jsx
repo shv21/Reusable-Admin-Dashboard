@@ -1,9 +1,15 @@
-import React from 'react'
-
 function Users() {
   return (
-    <div>Users</div>
-  )
+    <div>
+      <h1 className="text-2xl font-bold">
+        Users
+      </h1>
+
+      <p className="text-gray-500">
+        Users page
+      </p>
+    </div>
+  );
 }
 
-export default Users
+export default Users;
