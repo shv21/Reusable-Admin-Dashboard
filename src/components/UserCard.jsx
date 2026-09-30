@@ -1,4 +1,4 @@
-import formatDate from "../utils/formatDate";
+import { memo } from "react"
 import Button from "./Button";
 
 function UserCard({ user, onClick }) {
@@ -17,7 +17,7 @@ function UserCard({ user, onClick }) {
       <span className="text-sm text-gray-500">
         {user.username}
       </span>
-      
+
       <Button  onClick={() => onClick(user)}>
         View
       </Button>
@@ -25,4 +25,4 @@ function UserCard({ user, onClick }) {
   );
 }
 
-export default UserCard;
+export default memo(UserCard);

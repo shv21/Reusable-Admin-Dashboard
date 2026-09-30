@@ -12,10 +12,12 @@ import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
+import NotificationToast from "./components/NotificationToast"
 
 function App() {
   return (
     <BrowserRouter>
+    <NotificationToast />
       <Routes>
 
         <Route path="/login" element={<Login />} />
